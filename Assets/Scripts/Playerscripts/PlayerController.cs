@@ -64,13 +64,13 @@ public class PlayerController : MonoBehaviour
 
         // Example clamping to keep the player within certain bounds
 
-         float minX = -8f;
+         float minX = -9f;
 
-         float maxX = 8f;
+         float maxX = 9f;
 
-         float minY = -4f;
+         float minY = -5f;
 
-         float maxY = 4f;
+         float maxY = 5f;
 
 
         Vector3 clampedPosition = transform.position;

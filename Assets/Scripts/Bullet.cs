@@ -5,12 +5,12 @@ using System.Collections.Generic;
 public class Bullet : MonoBehaviour
 {
     public float speed = 5f;
-    public float deactivate_Timer = 1f;
+    public float deactivate_Timer = 3f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        Invoke("DeactivateGameObject", deactivate_Timer);
     }
 
     // Update is called once per frame
@@ -26,6 +26,10 @@ public class Bullet : MonoBehaviour
         transform.position = temp;   
     }
 
+    void DeactivateGameObject()
+    {
+        gameObject.SetActive(false);
+    }
  
 
 
